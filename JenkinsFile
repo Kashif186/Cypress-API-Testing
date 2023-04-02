@@ -26,11 +26,6 @@ pipeline {
       steps {
         bat 'npx cypress run --spec cypress/e2e/apitests.cy.js --config-file cypress.config.js'
       }
-      post {
-        always {
-          junit 'cypress/results/*.xml'
-        }
-      }
     }
   }
 }
