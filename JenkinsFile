@@ -12,9 +12,10 @@ pipeline {
 
     stage('Install Dependencies') {
       steps {
+        sh 'npm i'
         // sh 'npm init'
-        sh 'npm install cypress --save-dev'
-        sh 'npm install cypress-restful-api --save-dev'
+        // sh 'npm install cypress --save-dev'
+        // sh 'npm install cypress-restful-api --save-dev'
       }
     }
 
