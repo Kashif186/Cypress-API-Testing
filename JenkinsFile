@@ -21,7 +21,7 @@ pipeline {
 
     stage('Run Tests') {
       steps {
-        sh 'npx cypress run --spec cypress/e2e/apitests.cy.js --config-file cypress.config.js'
+        bat 'npx cypress run --spec cypress/e2e/apitests.cy.js --config-file cypress.config.js'
       }
       post {
         always {
