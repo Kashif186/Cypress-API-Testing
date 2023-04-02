@@ -1,10 +1,9 @@
 pipeline {
   agent any
-  //tools {nodejs "Node18"}
   
-  //options {
-  //      ansiColor('xterm')
-  //  }
+  options {
+        ansiColor('css')
+  }
 
   stages {
     stage('Checkout') {
