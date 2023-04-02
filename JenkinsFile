@@ -1,7 +1,10 @@
 pipeline {
   agent any
   tools {nodejs "Node18"}
-
+  
+  options {
+        encoding 'UTF-8'
+    }
 
   stages {
     stage('Checkout') {
@@ -20,9 +23,6 @@ pipeline {
     }
 
     stage('Run Tests') {
-      environment {
-                  LANG = 'en_US.UTF-8'
-      }
       steps {
         bat 'npx cypress run --spec cypress/e2e/apitests.cy.js --config-file cypress.config.js'
       }
