@@ -3,7 +3,7 @@ pipeline {
   tools {nodejs "Node18"}
   
   options {
-        encoding 'UTF-8'
+        ansiColor('xterm')
     }
 
   stages {
