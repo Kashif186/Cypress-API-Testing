@@ -26,8 +26,6 @@ pipeline {
       post {
         always {
           junit 'cypress/results/*.xml'
-          archiveArtifacts 'cypress/screenshots/**'
-          archiveArtifacts 'cypress/videos/**'
         }
       }
     }
