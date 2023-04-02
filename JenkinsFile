@@ -1,5 +1,7 @@
 pipeline {
   agent any
+  tools {nodejs "Node18"}
+
 
   stages {
     stage('Checkout') {
@@ -10,7 +12,7 @@ pipeline {
 
     stage('Install Dependencies') {
       steps {
-        sh 'npm init'
+        // sh 'npm init'
         sh 'npm install cypress --save-dev'
         sh 'npm install cypress-restful-api --save-dev'
       }
