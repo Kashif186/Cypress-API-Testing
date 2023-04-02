@@ -12,10 +12,10 @@ pipeline {
 
     stage('Install Dependencies') {
       steps {
-        bat '"C:\\Program Files\\nodejs\\npm" install'
-        // sh 'npm init'
-        // sh 'npm install cypress --save-dev'
-        // sh 'npm install cypress-restful-api --save-dev'
+        //bat '"C:\\Program Files\\nodejs\\npm" install'
+        bat 'npm init'
+        bat 'npm install cypress --save-dev'
+        bat 'npm install cypress-restful-api --save-dev'
       }
     }
 
