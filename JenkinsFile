@@ -26,18 +26,5 @@ pipeline {
         bat 'npx cypress run --spec cypress/e2e/apitests.cy.js --config-file cypress.config.js'
       }
     }
-    
-    stage('Publish Results') {
-      steps {
-        junit 'cypress/results/*.xml'
-        publishHTML(target: [
-          allowMissing: false,
-          alwaysLinkToLastBuild: true,
-          keepAll: true,
-          reportDir: 'cypress/results',
-          reportFiles: 'mochawesome.html'
-        ])
-      }
-    }
 }
 }
