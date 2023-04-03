@@ -9,7 +9,7 @@ module.exports = defineConfig({
     "baseUrl": "https://jsonplaceholder.typicode.com",
     "reporter": "mochawesome",
     "reporterOptions": {
-      "reportDir": "cypress/results/mochawesome",
+      "reportDir": "cypress/results/",
       "overwrite": false,
       "html": false,
       "json": true
