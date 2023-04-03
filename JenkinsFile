@@ -35,7 +35,7 @@ pipeline {
           alwaysLinkToLastBuild: true,
           keepAll: true,
           reportDir: 'cypress/results',
-          reportFiles: 'index.html'
+          reportFiles: 'mochawesome.html'
         ])
       }
     }
