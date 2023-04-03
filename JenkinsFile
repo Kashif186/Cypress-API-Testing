@@ -38,5 +38,6 @@ pipeline {
           reportFiles: 'index.html'
         ])
       }
-  }
+    }
+}
 }
