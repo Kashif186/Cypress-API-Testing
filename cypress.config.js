@@ -6,8 +6,14 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
 
-    "baseUrl": "https://jsonplaceholder.typicode.com"
-    
+    "baseUrl": "https://jsonplaceholder.typicode.com",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "cypress/results/mochawesome",
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
   },
 
   
